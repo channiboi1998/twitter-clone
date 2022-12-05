@@ -1,0 +1,21 @@
+.trend {
+    position: relative;
+    padding: 12px 16px;
+    cursor: pointer;
+}
+.trend:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+.trend .location,
+.trend .tweetCount {
+    font-size: 13px;
+    color: #666666;
+}
+.trend .label {
+    font-weight: 700;
+}
+.trend .icon {
+    position: absolute;
+    right: 16px;
+    top: 7px;
+}

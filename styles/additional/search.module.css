@@ -1,0 +1,16 @@
+.searchboxForm {
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+.searchboxForm .searchbox {
+    width: 100%;
+    border-radius: 60px;
+}
+.searchboxForm .searchIcon {
+    margin-left: 12px;
+    margin-right: 0px;
+    cursor: pointer;
+}
+.searchboxForm .searchbox div input {
+    padding: 12px;
+}

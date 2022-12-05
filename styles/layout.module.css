@@ -1,0 +1,11 @@
+.layoutContainer {
+    max-width: 1300px;
+}
+.layoutContainer .sidebarContainer {
+    position: fixed;
+    width: 280px;
+    height: 100vh;
+}
+.layoutContainer .mainContainer {
+    margin-left: 280px;
+}

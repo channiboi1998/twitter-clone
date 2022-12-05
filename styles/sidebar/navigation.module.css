@@ -1,0 +1,18 @@
+.navigation .link {
+    display: block;
+    padding: 2px 0px;
+}
+.navigation .link .button {
+    padding: 10px 30px 10px 15px;
+    border-radius: 60px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+}
+.navigation .link.active .button {
+    font-weight: 700;
+}
+.navigation .link .button .icon {
+    font-size: 28px;
+    margin-right: 10px;
+}
