@@ -10,16 +10,31 @@ type Props = {
 
 const Layout = ({ children }: Props) => {
     return (
-        <Container className={Style.layoutContainer}>
-            <Box className={Style.sidebarContainer}>
+        <Container 
+            className={Style.container}
+        >
+            <Box className={Style.sidebar}>
                 <Sidebar />
             </Box>
-            <Box className={Style.mainContainer}>
+            <Box className={Style.main}>
                 <Grid container>
-                    <Grid item xs={8} sx={{ height: "2000px" }}>
+                    <Grid item 
+                        className={Style.content}
+                        md={7.5} 
+                        sm={12}
+                        xs={12}
+                    >
                         {children}
                     </Grid>
-                    <Grid item xs={4}>
+                    <Grid item 
+                        className={Style.additional}
+                        md={4.5} 
+                        display={{
+                            xs: "none",
+                            sm: "none",
+                            md: "block",
+                        }}
+                    >
                         <Additional />
                     </Grid>
                 </Grid>

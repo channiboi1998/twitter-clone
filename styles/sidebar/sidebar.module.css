@@ -13,8 +13,38 @@
 .sidebarContainer .tweetButton {
     width: 90%;
     min-height: 52px;
-    font-weight: 700;
     font-size: 16px;
-    box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
     margin: 5px 0px;
+}
+@media (min-width: 0px) {
+    .sidebarContainer .mobileTweetButton {
+        display: inline-flex;
+    }
+    .sidebarContainer .userInfoContainer,
+    .sidebarContainer .tweetButton {
+        display: none;
+    }
+}
+@media (min-width: 600px) {
+    .sidebarContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (min-width: 900px) {
+    .sidebarContainer .tweetButton {
+        display: block;
+    }
+    .sidebarContainer {
+        display: block;
+        flex-direction: unset;
+        align-items: unset;
+    }
+    .sidebarContainer .userInfoContainer {
+        display: block;
+    }
+    .sidebarContainer .mobileTweetButton {
+        display: none;
+    }
 }

@@ -2,7 +2,7 @@ import { Box } from '@mui/system'
 import React from 'react'
 import Link from 'next/link'
 import { Typography } from '@mui/material'
-import Style from '../../styles/additional/greyBox.module.css'
+import Style from '../../../styles/additional/greyBox.module.css'
 
 const greyBox = (props: { children: any, title: string, url: string }) => {
     return (

@@ -14,8 +14,17 @@ a {
     box-sizing: border-box;
 }
 .button {
+    font-weight: 700;
+    padding: 0px 25px;
     border-radius: 60px;
     text-transform: capitalize;
+    box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
+}
+.button.small {
+    max-height: 35px;
+}
+.button.dark {
+    background-color: #000000;
 }
 .greyBg {
     background-color: #f7f9f9;

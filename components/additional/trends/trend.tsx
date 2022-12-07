@@ -3,12 +3,12 @@ import IconButton from '@mui/material/IconButton'
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz'
 import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
-import Style from '../../styles/additional/trend.module.css'
+import Style from '../../../styles/additional/trends/trend.module.css'
 
 const trend = () => {
     return (
         <>
-            <Box className={Style.trend}>
+            <Box className={`${Style.trend}`}>
                 <Typography
                     variant="body2"
                     className={Style.location}

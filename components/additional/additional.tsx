@@ -1,7 +1,10 @@
 import React from 'react'
-import Search from './search'
-import Trends from './trends'
-import GreyBox from './greyBox'
+import Search from './search/search'
+import Trends from './trends/trends'
+import GreyBox from './utils/greyBox'
+import FollowSuggestions from './followSuggestions/followSuggestions'
+import Footer from './footer/footer'
+
 const Additional = () => {
     return (
         <>
@@ -10,8 +13,9 @@ const Additional = () => {
                 <Trends />
             </GreyBox>
             <GreyBox title="Who to follow" url="#">
-                
+                <FollowSuggestions />
             </GreyBox>
+            <Footer />
         </>
     )
 }

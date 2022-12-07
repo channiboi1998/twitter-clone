@@ -13,6 +13,7 @@
 }
 .trend .label {
     font-weight: 700;
+    color: #000000;
 }
 .trend .icon {
     position: absolute;

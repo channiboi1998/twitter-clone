@@ -1,0 +1,26 @@
+.suggestion {
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.suggestion:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+.suggestion .image {
+    width: 45px;
+    height: 45px;
+    border-radius: 60px;
+    margin-right: 10px;
+}
+.suggestion .name {
+    font-weight: 700;
+}
+
+.suggestion .handle {
+    color: #666666;
+    font-size: 13px;
+}
