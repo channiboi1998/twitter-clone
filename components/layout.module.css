@@ -1,3 +1,6 @@
+.container {
+    position: relative;
+}
 .container .sidebar {
     position: fixed;
     height: 100vh;

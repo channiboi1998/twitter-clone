@@ -2,11 +2,11 @@ import { Box } from '@mui/system'
 import React from 'react'
 import Link from 'next/link'
 import { Typography } from '@mui/material'
-import Style from '../../../styles/additional/greyBox.module.css'
+import Style from './greyBox.module.css'
 
 const greyBox = (props: { children: any, title: string, url: string }) => {
     return (
-        <>
+        <React.Fragment>
             <Box className={`${Style.greyBoxContainer} greyBg`}>
                 <Typography
                     className={Style.title}
@@ -25,7 +25,7 @@ const greyBox = (props: { children: any, title: string, url: string }) => {
                     </Typography>
                 </Link>
             </Box>
-        </>
+        </React.Fragment>
     )
 }
 

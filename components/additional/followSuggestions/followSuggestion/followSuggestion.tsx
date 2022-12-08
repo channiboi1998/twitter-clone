@@ -1,11 +1,11 @@
 import { Box, Stack } from '@mui/system'
 import React from 'react'
-import Style from '../../../styles/additional/followSuggestions/followSuggestion.module.css'
+import Style from './followSuggestion.module.css'
 import { Button, Typography } from '@mui/material'
 
 const followSuggestion = () => {
     return (
-        <>
+        <React.Fragment>
             <Box className={Style.suggestion}>
                 <Stack direction="row" className={Style.row}>
                     <img
@@ -25,7 +25,7 @@ const followSuggestion = () => {
                 </Stack>
                 <Button className={`dark button small`} variant="contained">Follow</Button>
             </Box>
-        </>
+        </React.Fragment>
     )
 }
 

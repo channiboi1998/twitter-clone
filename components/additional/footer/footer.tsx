@@ -1,11 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
-import Style from '../../../styles/additional/footer/footer.module.css'
+import Style from './footer.module.css'
 import { Box } from '@mui/material'
 
 const footer = () => {
     return (
-        <>
+        <React.Fragment>
             <nav className={Style.navigation}>
                 <Link href="#" className={Style.link}>Terms of Service</Link>
                 <Link href="#" className={Style.link}>Privacy Policy</Link>
@@ -16,7 +16,7 @@ const footer = () => {
                     <Link href="#" className={Style.link}>© 2022 Twitter, Inc.</Link>
                 </Box>
             </nav>
-        </>
+        </React.Fragment>
     )
 }
 

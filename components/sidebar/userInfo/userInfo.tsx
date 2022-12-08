@@ -1,11 +1,11 @@
 import React from 'react'
 import { Box, Button } from '@mui/material'
-import Style from '../../../styles/sidebar/userInfo/userInfo.module.css'
+import Style from './userInfo.module.css'
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 
 const UserInfo = () => {
     return (
-        <>
+        <React.Fragment>
             <Box>
                 <Button
                     variant="text"
@@ -24,7 +24,7 @@ const UserInfo = () => {
                     </Box>
                 </Button>
             </Box>
-        </>
+        </React.Fragment>
     )
 }
 

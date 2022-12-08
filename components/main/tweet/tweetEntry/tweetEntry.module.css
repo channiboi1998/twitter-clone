@@ -1,0 +1,58 @@
+.tweet .user {
+    padding: 10px 0px 10px 10px;
+}
+.tweet .user .userImage {
+    border-radius: 60px;
+}
+.tweet .tweetContent {
+    padding: 10px;
+    position: relative;
+}
+.tweet .tweetContent .options {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.tweet .tweetContent .content {
+    margin-bottom: 10px;
+}
+.tweet .tweetContent .userDetails .name,
+.tweet .tweetContent .userDetails .handle,
+.tweet .tweetContent .userDetails .time {
+    margin-right: 5px;
+}
+.tweet .tweetContent .userDetails .name {
+    font-weight: 700;
+}
+.tweet .tweetContent .userDetails .handle,
+.tweet .tweetContent .userDetails .time {
+    color: #666666;
+}
+.tweet .tweetContent .actions {
+    margin-left: -10px;
+}
+.tweet .tweetContent .actions .action {
+    display: flex;
+    align-items: center;
+}
+.tweet .tweetContent .actions .action .icon {
+    font-size: 20px;
+}
+.tweet .tweetContent .actions .action .count {
+    margin-left: 10px;
+}
+@media (min-width: 0px) {
+    .tweet .user .userImage {
+        width: 35px;
+        height: 35px;
+    }
+}
+@media (min-width: 600px) {
+    .tweet .tweetContent .userDetails {
+        margin-bottom: 5px;
+    }
+    .tweet .user .userImage {
+        width: 45px;
+        height: 45px;
+    }
+}

@@ -1,7 +1,7 @@
 .greyBoxContainer {
     border-radius: 16px;
     overflow: hidden;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 .greyBoxContainer .title {
     font-weight: 700;

@@ -1,0 +1,56 @@
+.form {
+    width: 100%;
+    margin: unset;
+}
+.form .user {
+    padding: 10px 0px 10px 10px;
+}
+.form .user .userImage {
+    border-radius: 60px;
+}
+.form .formContent {
+    padding: 10px;
+}
+.form .formContent .tweetInput {
+    margin-bottom: 10px;
+}
+.form .formContent .formActions .icon {
+    font-size: 22px;
+}
+@media (min-width: 0px) {
+    .form .user .userImage {
+        width: 35px;
+        height: 35px;
+    }
+    .form .formContent .tweetInput {
+        min-height: 35px;
+    }
+    .form .formContent .tweetInput textarea {
+        font-size: 16px;
+    }
+    .form .formContent .formActions .icon {
+        display: none;
+    }
+    .form .formContent .formActions .icon:nth-child(-n+3),
+    .form .formContent .formActions .icon:last-child {
+        display: inline-flex;
+    }
+}
+@media (min-width: 600px) {
+    .form .user .userImage {
+        width: 45px;
+        height: 45px;
+    }
+    .form .formContent .tweetInput {
+        min-height: 70px;
+    }
+    .form .formContent .tweetInput textarea {
+        font-size: 20px;
+    }
+    .form .formContent .formActions .icon {
+        display: inline-flex;
+    }
+    .form .formContent .formActions .icon:last-child {
+        display: none;
+    }
+}

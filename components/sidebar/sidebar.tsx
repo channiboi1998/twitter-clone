@@ -4,13 +4,13 @@ import TwitterIcon from '@mui/icons-material/Twitter'
 import Navigation from './navigation/navigation'
 import Button from '@mui/material/Button'
 import UserInfo from './userInfo/userInfo'
-import Style from '../../styles/sidebar/sidebar.module.css'
+import Style from './sidebar.module.css'
 import CreateIcon from '@mui/icons-material/Create'
 import Fab from '@mui/material/Fab';
 
 const Sidebar = () => {
     return (
-        <>
+        <React.Fragment>
             <Box className={Style.sidebarContainer}>
                 <IconButton className={Style.twitterIcon} color="primary">
                     <TwitterIcon className={Style.twitterIcon} />
@@ -28,7 +28,7 @@ const Sidebar = () => {
                     <UserInfo />
                 </Box>
             </Box>
-        </>
+        </React.Fragment>
     )
 }
 

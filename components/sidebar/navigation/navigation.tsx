@@ -1,92 +1,87 @@
 import React from 'react'
 import Link from 'next/link'
-import { Button } from '@mui/material'
-import FoundationIcon from '@mui/icons-material/Foundation'
-import TagIcon from '@mui/icons-material/Tag'
-import MailOutlineIcon from '@mui/icons-material/MailOutline'
-import PersonOutlineIcon from '@mui/icons-material/PersonOutline'
-import MoreHorizIcon from '@mui/icons-material/MoreHoriz'
-import IconButton from '@mui/material/IconButton'
-import Style from '../../../styles/sidebar/navigation/navigation.module.css'
+import { Button, IconButton } from '@mui/material'
+import Style from './navigation.module.css'
+import { Foundation, Tag, MailOutline, PersonOutline, MoreHoriz, NotificationsNone } from '@mui/icons-material'
 
 const Navigation = () => {
     return (
-        <>
+        <React.Fragment>
             <nav className={Style.navigation}>
                 <Link href="#" className={`${Style.link} ${Style.active}`}>
                     <IconButton className={Style.mobileButton} >
-                        <FoundationIcon className={Style.svg} color="secondary" />
+                        <Foundation className={Style.svg} color="secondary" />
                     </IconButton>
                     <Button
                         variant="text"
                         className={Style.button}
                         color="secondary"
-                        startIcon={<FoundationIcon className={Style.icon} />}>
+                        startIcon={<Foundation className={Style.icon} />}>
                         Home
                     </Button>
                 </Link>
                 <Link href="#" className={`${Style.link}`}>
                     <IconButton className={Style.mobileButton} >
-                        <TagIcon className={Style.svg} color="secondary" />
+                        <Tag className={Style.svg} color="secondary" />
                     </IconButton>
                     <Button
                         variant="text"
                         className={Style.button}
                         color="secondary"
-                        startIcon={<TagIcon className={Style.icon} />}>
+                        startIcon={<Tag className={Style.icon} />}>
                         Explore
                     </Button>
                 </Link>
                 <Link href="#" className={`${Style.link}`}>
                     <IconButton className={Style.mobileButton} >
-                        <FoundationIcon className={Style.svg} color="secondary" />
+                        <NotificationsNone className={Style.svg} color="secondary" />
                     </IconButton>
                     <Button
                         variant="text"
                         className={Style.button}
                         color="secondary"
-                        startIcon={<FoundationIcon className={Style.icon} />}>
+                        startIcon={<NotificationsNone className={Style.icon} />}>
                         Notifications
                     </Button>
                 </Link>
                 <Link href="#" className={`${Style.link}`}>
                     <IconButton className={Style.mobileButton} >
-                        <MailOutlineIcon className={Style.svg} color="secondary" />
+                        <MailOutline className={Style.svg} color="secondary" />
                     </IconButton>
                     <Button
                         variant="text"
                         className={Style.button}
                         color="secondary"
-                        startIcon={<MailOutlineIcon className={Style.icon} />}>
+                        startIcon={<MailOutline className={Style.icon} />}>
                         Messages
                     </Button>
                 </Link>
                 <Link href="#" className={`${Style.link}`}>
                     <IconButton className={Style.mobileButton} >
-                        <PersonOutlineIcon className={Style.svg} color="secondary" />
+                        <PersonOutline className={Style.svg} color="secondary" />
                     </IconButton>
                     <Button
                         variant="text"
                         className={Style.button}
                         color="secondary"
-                        startIcon={<PersonOutlineIcon className={Style.icon} />}>
+                        startIcon={<PersonOutline className={Style.icon} />}>
                         Profile
                     </Button>
                 </Link>
                 <Link href="#" className={`${Style.link}`}>
                     <IconButton className={Style.mobileButton} >
-                        <MoreHorizIcon className={Style.svg} color="secondary" />
+                        <MoreHoriz className={Style.svg} color="secondary" />
                     </IconButton>
                     <Button
                         variant="text"
                         className={Style.button}
                         color="secondary"
-                        startIcon={<MoreHorizIcon className={Style.icon} />}>
+                        startIcon={<MoreHoriz className={Style.icon} />}>
                         More
                     </Button>
                 </Link>
             </nav>
-        </>
+        </React.Fragment>
     )
 }
 
