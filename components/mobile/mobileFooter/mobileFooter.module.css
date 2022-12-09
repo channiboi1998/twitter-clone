@@ -8,12 +8,11 @@
     bottom: 0;
     width: 100%;
     border-top: 1px solid #e9e9e9;
-    padding: 10px 0px;
+    padding: 8px 0px;
+    background-color: #ffffff;
+    z-index: 2;
 }
 .floatingTweetButton {
     bottom: 90px;
     right: 20px;
-}
-.navigation .link .icon {
-    font-size: 27px;
 }

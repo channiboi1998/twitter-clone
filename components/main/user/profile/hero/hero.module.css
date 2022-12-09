@@ -1,0 +1,64 @@
+.hero .banner {
+    position: relative;
+    background-image: url("https://wallpapercave.com/wp/wp10822973.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero .banner .avatar {
+    border: 5px solid #ffffff;
+    border-radius: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+}
+.hero .userInfo {
+    padding: 10px;
+}
+.hero .userInfo .name {
+    font-weight: 700;
+    font-size: 18px;
+}
+.hero .userInfo .handle,
+.hero .userInfo .follow .link {
+    color: #666666;
+}
+.hero .userInfo .follow {
+    display: flex;
+    padding: 10px 0px;
+}
+.hero .userInfo .follow .link {
+    margin-right: 10px;
+}
+.hero .userInfo .follow .link .count {
+    color: #000000;
+    font-weight: 700;
+    margin-right: 5px;
+}
+@media (min-width: 0px) {
+    .hero .banner {
+        height: 120px;
+    }
+    .hero .banner .avatar {
+        height: 80px;
+        width: 80px;
+        bottom: -40px;
+        left: 5px;
+    }
+    .hero .userInfo {
+        padding-top: 50px;
+    }
+}
+@media (min-width: 900px) {
+    .hero .banner {
+        height: 200px;
+    }
+    .hero .banner .avatar {
+        left: 20px;
+        height: 120px;
+        width: 120px;
+        bottom: -60px;
+    }
+    .hero .userInfo {
+        padding-top: 80px;
+    }
+} 
